@@ -1,5 +1,5 @@
 function httptohttps() {
     if (location.protocol === "http:") {
-        location.replace(window.location.href});
+        location.replace('https://tutorials.arduinoexchange.xyz'});
     }
 }
