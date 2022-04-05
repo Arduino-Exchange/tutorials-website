@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --main: #fffaff;
+  --secondary: #aee4ff;
+  --bg: #5b415e;
+  --bg-alt: #cb98d1;
+  --warning: rgb(241, 92, 92);
+  --black: rgb(37, 36, 36);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--bg);
+  color: var(--main);
+}
+
+.navbar-container {
+  margin: 0.5em;
+  overflow: hidden;
+}
+
+.navbar-container a {
+  float: left;
+  color: var(--white);
+  text-align: center;
+  padding: 0.3em 0.3em;
+  text-decoration: none;
+  border-bottom: none;
+  margin: 0.3em;
+}
+
+.navbar-container a:hover {
+  color: var(--link-hover);
+}
+
+.navbar-container a.active {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+a {
+  color: var(--main);
+  font-weight: bold;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #00ffc3d5, #ffffffdd);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+a:hover, a:focus, a:active {
+  background-size: 100% 0.1em;
+  background-position-x: 0%;
+}
+
+.navbar-icons {
+  float: right;
+}
+
+footer {
+  font-size: 0.8em;
+  color: var(--secondary);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.tutorials {
+  height: 70vh;
+}
+
+#particles-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0
+}
