@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Customizations -->
+  <title>Page Not Found | 404 Error</title>
+  <link rel="shortcut icon" href="/favicon.jpg" />
+  <meta name="description"
+  content="A friendly community for anyone to work on code, improving your skills, and collaborate with each other.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/public/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+</head>
+<style>
+  .button {
+     text-align: center;
+  }
+</style>
+
+<body>
+    <div class="navbar-container">
+        <div class="navbar-links">
+          <a href="https://arduinoexchange.xyz/"><i class="fa-solid fa-arrow-right-to-bracket"></i> Back to main site</a>
+          <a href="/">Home</a>
+          <a href="/public/programming-lang/">Programming languages</a>
+          <a href="/public/challenges/">Exercises/Challenges</a>
+          <a href="https://forum.arduinoexchange.xyz">Forum</a>      
+          <a href="/public/references/">References</a>
+        </div>
+        <div class="navbar-icons">
+          <a href="https://discord.gg/9y7Uc4kxgh"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://www.reddit.com/r/Arduino_exchange/"><i class="fa-brands fa-reddit"></i></a>
+          <a href="https://github.com/Arduino-Exchange"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/ArduinoExchange"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <h3 class="warning">
+          <i class="fa-solid fa-circle-exclamation"></i> 404 | Page Not Found!
+        </h3>
+        The requested URL/Page was not found on this website.
+      </div>
+      <div class="button">
+        <button class="btn" style="background-color: rgb(167, 32, 115);" onclick="history.back()">
+          <i class="fa-solid fa-circle-left"></i> 
+          Go Back 
+        </button>
+      </div>
+    
+      <footer>
+      © Arduino Exchange 2022 - Made with ❤️ by <a href="https://arduinoexchange.xyz/about">our Developers</a>
+    </footer>
+  </div>
+
+  <!-- Particles.js -->
+  <div id="particles-bg"></div>
+  <script>
+    particlesJS.load("particles-bg", "/particles.json");
+  </script>
+</body>
+
+</html>
