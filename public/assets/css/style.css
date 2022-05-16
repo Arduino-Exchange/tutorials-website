@@ -87,3 +87,22 @@ footer {
   top: 0;
   left: 0
 }
+
+.warning {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  padding: 1em;
+  display: inline-block;
+  font-size: 1.2em;
+  color: var(--main);
+  margin: 1.2em 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.8em;
+  -webkit-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.35);
+}
+
