@@ -22,8 +22,8 @@
 
         <!-- SEO -->
         <meta name="author" content="Arduino Exchange Tutorials">
-        <meta name="keywords" content="arduino, arduinoexchange, Arduino, ArduinoExchange, arduinoexchange.ml, tutorials, Arduino Exchange Tutorials, arduinoexchange.xyz, tutorials.arduinoexchange.xyz">
-        <meta property="og:title" content="About | Arduino Exchange">
+        <meta name="keywords" content="arduino, arduinoexchange, Arduino, ArduinoExchange, arduinoexchange.ml, tutorials, Arduino Exchange Tutorials, arduinoexchange.xyz, tutorials.arduinoexchange.xyz, programming languages">
+        <meta property="og:title" content="Programming Languages | Arduino Exchange Tutorials">
         <meta property="og:description" content="A playground for Arduino or any Developers for improving skills and more.">
         <meta property="og:url" content="https://tutorials.arduinoexchange.xyz">
         <meta property="og:locale" content="en_US">
@@ -38,9 +38,94 @@
         <meta name="twitter:description" content="A playground for Arduino or any Developers for improving skills and more.">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:image" content="/favicon.jpg">
-        
+        <style>
+            .begin{
+               padding-left: 5%; 
+               padding-right: 15%;
+            }
+
+            .begin > h1 {
+               font-size: 30px;
+            }
+
+            .begin > h2 {
+               font-size: 15px;
+            }
+            .flex-container {
+                display: flex;
+                background-color: none;
+                align-items: center;
+                justify-content: center;
+            }
+            .flex-container > div {
+                background-color: none;
+                margin: 10px;
+                padding: 10px;
+                font-size: 24px; 
+            }
+            .center {
+                text-align: center;
+                margin-top: 10%;
+            }
+        </style>
     </head>
     <body>
-         
+        <div class="navbar-container">
+            <div class="navbar-links">
+              <a href="https://arduinoexchange.xyz/"><i class="fa-solid fa-arrow-right-to-bracket"></i> Back to main site</a>
+              <a href="/">Home</a>
+              <a href="programming-lang/">Programming languages</a>
+              <a href="challenges/">Exercises/Challenges</a>
+              <a href="https://forum.arduinoexchange.xyz">Forum</a>      
+              <a href="references/">References</a>
+            </div>
+            <div class="navbar-icons">
+              <a href="https://discord.gg/9y7Uc4kxgh"><i class="fa-brands fa-discord"></i></a>
+              <a href="https://www.reddit.com/r/Arduino_exchange/"><i class="fa-brands fa-reddit"></i></a>
+              <a href="https://github.com/Arduino-Exchange"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/ArduinoExchange"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+         <div class="begin">
+             <h1>Programming Languages</h1>
+             <h2>
+                Programming Languages are things that makes up in every IT/IoT/Software applications on all arround the world. 
+                With it, Programmers don't have to write code in binary. That's how they work!
+             </h2>
+             <h2>
+                You can choose every programming language that you wanted to learn right here with our beginner tutorials below. 
+             </h2>
+         </div>
+
+         <div class="center">
+             <h2>Most popular web programming languages</h2>
+             <div class="flex-container">
+                 <div><a href="javascript/">JavaScript</a></div>
+                 <div><a href="html/">HTML</a></div>
+                 <div><a href="css/">CSS</a></div>
+             </div>
+             <h2 style="margin-top: 200px;">Most popular software development languages</h2>
+             <div class="flex-container">
+                 <div><a href="CSharp/">C#</a></div>
+                 <div><a href="C/">C</a></div>
+                 <div><a href="CPP/">C++</a></div>
+                 <div><a href="python/">Python</a></div>
+                 <div><a href="kotlin/">Kotlin</a></div>
+             </div>
+             <h2 style="margin-top: 200px;">More</h2>
+             <div class="flex-container">
+                 <div><a href="sql/">SQL</a></div>
+                 <div><a href="sass/">SASS</a></div>
+                 <div><a href="php/">PHP</a></div>
+             </div>
+         </div>
+         <div style="margin-top: 100px;"></div>
+         <footer>
+            © Arduino Exchange 2022 - Made with ❤️ by <a class="about-link" href="https://arduinoexchange.xyz/about">our developers.</a>
+          </footer>
+          <div id="particles-bg"></div>
+          <script>
+            particlesJS.load("particles-bg", "/particles.json");
+          </script>
     </body>
 </html>
