@@ -123,3 +123,19 @@ footer {
     background-position: 100% 0;
   }
 }
+.begin{
+  margin-top: 5%;
+  padding-left: 5%; 
+  padding-right: 15%;
+}
+
+.begin > h1 {
+  font-size: 30px;
+}
+
+.begin > h2 {
+  font-size: 18px;
+}
+.ending {
+  margin-top: 200px;
+}
