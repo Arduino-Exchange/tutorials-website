@@ -105,4 +105,21 @@ footer {
   -webkit-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.35);
 }
+.shine {
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine-animation 4s ease-in-out infinite;
+  background-size: 400% 100%;
+  font-weight: bold;
+}
+@keyframes shine-animation {
+  0%, 100% {
+    background-position: 0 0;
+  }
 
+  50% {
+    background-position: 100% 0;
+  }
+}
