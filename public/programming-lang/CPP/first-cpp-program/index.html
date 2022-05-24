@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="/public/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--Customizations-->
+        <title>C++ | Arduino Exchange Tutorials</title>
+        <link rel="shortcut icon" href="/favicon.jpg" />
+        <meta name="description" content="A friendly community for anyone to work on code, improving your skills, and collaborate with each other.">
+        <meta content = "#00FFFF" data-react-helmet="true" name="theme-color">
+
+        <!--JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+        <!-- SEO -->
+        <meta name="author" content="Arduino Exchange Tutorials">
+        <meta name="keywords" content="arduino, arduinoexchange, Arduino, ArduinoExchange, arduinoexchange.ml, tutorials, Arduino Exchange Tutorials, 
+        arduinoexchange.xyz, tutorials.arduinoexchange.xyz, C++, CPP, C++ Programming language">
+        <meta property="og:title" content="C++ | Arduino Exchange Tutorials">
+        <meta property="og:description" content="A playground for Arduino or any Developers for improving skills and more.">
+        <meta property="og:url" content="https://tutorials.arduinoexchange.xyz">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="/favicon.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="https://tutorials.arduinoexchange.xyz">
+
+        <!--Twitter-->
+        <meta name="twitter:site" content="@ArduinoExchange">
+        <meta name="twitter:creator" content="@ArduinoExchange">
+        <meta name="twitter:title" content="Arduino Exchange Tutorials">
+        <meta name="twitter:description" content="A playground for Arduino or any Developers for improving skills and more.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/favicon.jpg">
+        <style>
+            .main-code {
+                margin-left: 20px;
+            }
+            .line-spacing {
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="navbar-container">
+        <div class="navbar-links">
+          <a href="https://arduinoexchange.xyz/"><i class="fa-solid fa-arrow-right-to-bracket"></i> Back to main site</a>
+          <a href="/">Home</a>
+          <a href="https://tutorials.arduinoexchange.xyz/programming-lang/">Programming languages</a>
+          <a href="https://tutorials.arduinoexchange.xyz/challenges/">Exercises/Challenges</a>
+          <a href="https://forum.arduinoexchange.xyz">Forum</a>      
+          <a href="https://tutorials.arduinoexchange.xyz/references/">References</a>
+        </div>
+        <div class="navbar-icons">
+          <a href="https://discord.gg/9y7Uc4kxgh"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://www.reddit.com/r/Arduino_exchange/"><i class="fa-brands fa-reddit"></i></a>
+          <a href="https://github.com/Arduino-Exchange"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/ArduinoExchange"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="begin">
+        <h1>Your first C++ program and syntax</h1>
+           <h2>In this tutorial, we'll be helping you understand your first C++ program and syntax. However, before getting started. You need to do 3 things below:</h2>
+              <ol>
+                  <li>You need to install a text-editor. There are many of them, but most popular is Visual Studio Code. If you don't like it, you can try with Notepad, Sublime Text, etc etc.</li>
+                  <li>You will need to install a GCC compiler. to compile the C++ code to machine language.You can try with LLVM, GCC, MSVC, Clang,.... </li>
+              </ol>
+              <div style="margin-top: 100px"></div>
+              <h1>Your first C++ program</h1>
+              <h2>Create a cpp file with ".cpp" at the end of the name. You can name it with every name you want.</h2>
+              <h2>Now write the following C++ code and save it:</h2>
+              <div style="margin-top: 50px;"></div>
+              <code>
+                <section class="code" style="width: 38%;">
+                 <span style="color:pink">#include</span><span style="color:cyan"> &lt;iostream&gt; </span>
+                 <div style="margin-top: 20px;"></div>
+                 <span style="color:rgb(57, 152, 255)">int </span> main() {
+                    <div class="main-code">
+                        <div class="line-spacing">
+                        <span style="color:rgb(255, 196, 0);">std</span>::<span style="color:rgb(255, 196, 0);">cout</span> &lt;&lt; <span style="color:orange">"Hello World!";</span>
+                        <div class="line-spacing">
+                        <span style="color:pink">return </span>0;
+                        <div class="line-spacing">
+                    </div>
+                }
+                </section>
+              </code>
+              <h1>Explaining</h1>
+              <ol>
+                    <li>the <span style="color:pink">#include</span><span style="color:cyan"> &lt;iostream&gt; </span>
+                       is to include the header file library.
+                       In this case, iostream is the library that let us work with input and output objects. 
+                       Such as <span style="color:rgb(255, 196, 0);">std</span>::<span style="color:rgb(255, 196, 0);">cout</span>. 
+                       Header files provides a lot of functionality for a C++ program.
+                    </li>
+                    <li>
+                        this is just a line space and optional. It makes the code more readable.
+                    </li>
+                    <li>
+                        A C++ program must have a main function. The curly brackets indicate the start and the end of the main function.
+                    </li>
+                    <li>
+                        std::cout prints the string inside the quotaion marks. std::cout must be followed by a &lt;&lt; and after that is a format string. 
+                        In this case, "Hello World" is a format string
+                    </li>
+                    <li>
+                        The <span style="color:pink">return </span>0; statement is the exit status of the program. Which means that the program ends with this statement.
+                        <span style="color:pink">return </span>0; means success. and 1 means failure.
+                    </li>
+
+              </ol>
+              <h2>Note: </h2>
+              <ul>
+                  <li>Every C++ statements ends with a ";" semicolon.</li>
+                  <li>The compiler ignores the white space in the code.</li>
+                  <li>You can actually write your main() code in just 1 line. Just remember to put a ";" in each statement!</li>
+              </ul>
+      
+      </div>
+        
+        <div class="ending"></div>
+        <footer>
+           © Arduino Exchange 2022 - Made with ❤️ by <a class="about-link" href="https://arduinoexchange.xyz/about">our developers.</a>
+         </footer>
+         <div id="particles-bg"></div>
+         <script>
+           particlesJS.load("particles-bg", "/particles.json");
+         </script>
+    </body>
+</html>
