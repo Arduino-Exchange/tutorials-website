@@ -139,3 +139,10 @@ footer {
 .ending {
   margin-top: 200px;
 }
+.code {
+  background-color: rgb(21, 21, 21);
+  height: 100%;
+  position: auto;
+  top: 0;
+  left: 0;
+}
