@@ -139,6 +139,7 @@ footer {
 .ending {
   margin-top: 200px;
 }
+
 .code {
   background-color: rgb(21, 21, 21);
   height: 100%;
@@ -146,4 +147,16 @@ footer {
   top: 0;
   left: 0;
   border-radius: 8px;
+}
+
+.main-code-config {
+  padding-left: 20px;
+
+}
+.main-code {
+  padding-left: 10px;
+
+}
+.line-spacing {
+  margin-top: 5px;
 }
