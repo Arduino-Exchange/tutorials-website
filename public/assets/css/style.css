@@ -160,3 +160,6 @@ footer {
 .line-spacing {
   margin-top: 5px;
 }
+li {
+  line-height: 34px;
+}
