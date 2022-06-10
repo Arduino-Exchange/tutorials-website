@@ -134,12 +134,11 @@ footer {
 }
 
 .begin > h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .ending {
   margin-top: 200px;
 }
-
 .code {
   background-color: rgb(21, 21, 21);
   height: 100%;
@@ -162,4 +161,11 @@ footer {
 }
 li {
   line-height: 34px;
+}
+.only1-line-code {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+h3 {
+  font-size: 17px;
 }
