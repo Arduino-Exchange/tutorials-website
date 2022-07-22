@@ -1,0 +1,57 @@
+.code {
+    background-color: rgb(21, 21, 21);
+    height: 100px;
+    position: auto;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+  
+.main-code-config {
+    padding-left: 20px;
+  
+}
+
+.main-code {
+    padding-left: 10px;
+  
+}
+
+.line-spacing {
+    margin-top: 5px;
+}
+
+li {
+    line-height: 34px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+.code-value {
+    color: rgb(241, 92, 92);
+}
+
+.var-highlighting {
+    color: aqua;
+}
+
+.variable {
+    color: rgb(57, 152, 255);
+}
+
+.base-class {
+    color: rgb(255, 196, 0);
+}
+
+.comment {
+    color: rgb(0, 255, 115);
+}
+
+.string {
+    color: rgb(255, 65, 35);
+}
