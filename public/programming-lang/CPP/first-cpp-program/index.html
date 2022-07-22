@@ -8,6 +8,7 @@
         
         <!--CSS-->
         <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/code-style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         
@@ -77,18 +78,18 @@
               <h2>Create a cpp file with ".cpp" at the end of the name. You can call it whatever you want.</h2>
               <h2>Now write the following C++ code and save it:</h2>
 
-              <div style="margin-top: 50px;"></div>
+              <br><br><br>
               <code>
-                <section class="code" style="width: 50%;">
+                <section class="code">
                 <div class="main-code-config">
-                  <span style="color:rgb(253, 100, 130)">#include</span><span style="color:cyan"> &lt;iostream&gt; </span>
+                  <span class="keywords">#include</span><span class="var-highlighting"> &lt;iostream&gt; </span>
                   <div style="margin-top: 20px;"></div>
-                  <span style="color:rgb(57, 152, 255)">int </span> main() {
+                  <span class="variable">int </span> main() {
                     <div class="main-code">
                         <div class="line-spacing">
-                        <span style="color:rgb(255, 196, 0);">std</span>::cout &lt;&lt; <span style="color:orange">"Hello World!";</span>
+                        <span class="base-class">std</span>::cout &lt;&lt; <span class="string">"Hello World!";</span>
                         <div class="line-spacing">
-                        <span style="color:rgb(253, 100, 130)">return </span>0;
+                        <span class="keywords">return </span>0;
                         <div class="line-spacing">
                     </div>
                     }
@@ -98,10 +99,10 @@
 
               <h2>Explaining</h2>
               <ol>
-                    <li>the <span style="color:rgb(253, 100, 130)">#include</span><span style="color:cyan"> &lt;iostream&gt; </span>
+                    <li>the <span class="keywords">#include</span><span class="var-highlighting"> &lt;iostream&gt; </span>
                        is to include the header file library.
                        In this case, iostream is the library that let us work with input and output objects. 
-                       Such as <span style="color:rgb(255, 196, 0);">std</span>::cout
+                       Such as <span class="base-class">std</span>::cout
                        Header files provide a lot of functionality for a C++ program.
                     </li>
                     <li>
@@ -115,8 +116,8 @@
                         In this case, "Hello World" is a format string
                     </li>
                     <li>
-                        The <span style="color:rgb(253, 100, 130)">return </span>0; statement is the exit status of the program. Which means that the program ends with this statement.
-                        <span style="color:rgb(253, 100, 130)">return </span>0; means success. and 1 means failure.
+                        The <span class="keywords">return </span>0; statement is the exit status of the program. Which means that the program ends with this statement.
+                        <span class="keywords">return </span>0; means success. and 1 means failure.
                     </li>
 
               </ol>
