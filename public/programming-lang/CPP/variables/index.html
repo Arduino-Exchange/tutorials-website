@@ -8,6 +8,7 @@
         
         <!--CSS-->
         <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/code-style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         
@@ -69,41 +70,41 @@
           <h2>In computer science (programming), a variable is a container that can hold, store and change data.</h2>
           <h2>In C++, there are numerous amount of data types. And they are defined with different keywords below:</h2>
           <ul>
-             <li><span style="color:rgb(57, 152, 255)">int</span> - which stores integers(without decimals) from -2147483648 to 2147483647 in values, which takes up about <b>4 bytes</b> in size</li>
-             <li><span style="color:rgb(57, 152, 255)">float</span> - which stores floating-point values from 3.4E38 to 3.4E-38. It is used for decimal and exponential values, which takes up about <b>4 bytes</b> in size</li>
-             <li><span style="color:rgb(57, 152, 255)">double</span> - which stores floating-point values from 1.7E308 to 1.7E-308. Which also used for decimal and exponential values but has a bigger size than <b>float</b>, takes up about <b>8 bytes</b></li>
-             <li><span style="color:rgb(57, 152, 255)">char</span> - which stores only single characters(letters), such as 'e', 'D', '7', 'y' and so on. It has 1 byte of size</li>
-             <li><span style="color:rgb(57, 152, 255)">bool</span> - which stores values with only two states: "true" and "false". It also has 1 byte of size</li>
-             <li><span style="color:rgb(57, 152, 255)">string</span> - stores text, such as "hello there!", "wassup",... This data type has 24 bytes in size.</li>
-             <li><span style="color:rgb(57, 152, 255)">void</span> - this is considered a data type. However, it is basically a keyword to use as a placeholder... For short, this represents as "no data"</li>
+             <li><span class="variable">int</span> - which stores integers(without decimals) from -2147483648 to 2147483647 in values, which takes up about <b>4 bytes</b> in size</li>
+             <li><span class="variable">float</span> - which stores floating-point values from 3.4E38 to 3.4E-38. It is used for decimal and exponential values, which takes up about <b>4 bytes</b> in size</li>
+             <li><span class="variable">double</span> - which stores floating-point values from 1.7E308 to 1.7E-308. Which also used for decimal and exponential values but has a bigger size than <b>float</b>, takes up about <b>8 bytes</b></li>
+             <li><span class="variable">bool</span> - which stores values with only two states: "true" and "false". It has 1 byte of size</li>
+             <li><span class="variable">char</span> - which stores only single characters(letters), such as 'e', 'D', '7', 'y' and so on. It also has 1 byte of size</li>
+             <li><span class="variable">string</span> - stores text, such as "hello there!", "wassup",... This data type has 24 bytes in size.</li>
+             <li><span class="variable">void</span> - this is considered a data type. However, it is basically a keyword to use as a placeholder... For short, this represents as "no data"</li>
             </ul>
             <h2>These are some basic variables in C++ programming. Now let's learn how to use them!</h2>
             <h3>To initialize a variable, specify the type and assign it with a valid value. Below is the syntax:</h3>
                 <code>
                      <section class="code">
-                            <span style="color:aqua">type</span> variable_name = <span style="color:rgb(254, 88, 46)">value</span>;
+                            <span class="var-highlighting">type</span> variable_name = <span class="code-value">value</span>;
                      </section>
                 </code>
 
                 <h3>
-                    Here, <span style="color:aqua">type</span> stands for any specific variables. 
+                    Here, <span class="var-highlighting">type</span> stands for any specific variables. 
                     variable_name stands for any name, such as "myName", "age", "mark",... 
-                    And <span style="color:rgb(254, 88, 46)">value</span> must be a valid value corresponding to data types
+                    And <span class="code-value">value</span> must be a valid value corresponding to data types
                 </h3>
 
                 <h3>For example, to create an integer name's "myVar" that stores a value of 100, we can do:</h3>
                 <code>
                     <section class="code">
-                           <span style="color:rgb(57, 152, 255)">int</span> myVar = <span style="color:rgb(254, 88, 46)">100</span>;
+                           <span class="variable">int</span> myVar = <span class="code-value">100</span>;
                     </section>
                </code>
 
                <h3>You can create a variable without declaring a value, then create it later like below: </h3>
                 <code>
                     <section class="code">
-                            <span style="color:rgb(57, 152, 255)">int</span> myVar;
+                            <span class="variable">int</span> myVar;
                             <div class="line-spacing"></div>
-                            myVar = <span style="color:rgb(254, 88, 46)">100</span>
+                            myVar = <span class="code-value">100</span>
                     </section>
                 </code>
                 <h3>
@@ -113,68 +114,120 @@
                 </h3>
                 <code>
                     <section class="code">
-                            <span style="color:rgb(57, 152, 255)">int</span> myVar;
+                            <span class="variable">int</span> myVar;
                             <div class="line-spacing"></div>
-                            myVar = <span style="color:rgb(254, 88, 46)">100</span>; 
+                            myVar = <span class="code-value">100</span>; 
                             <div class="line-spacing"></div>
-                            <span style="color:rgb(255, 196, 0);">std</span>::cout &lt;&lt; myVar; <span style="color:rgb(0, 255, 115)">// outputs 100</span>
+                            <span class="base-class">std</span>::cout &lt;&lt; myVar; <span class="comment">// outputs 100</span>
                             <div class="line-spacing"></div>
-                            myVar = <span style="color:rgb(254, 88, 46)">69420</span>;
+                            myVar = <span class="code-value">69420</span>;
                             <div class="line-spacing"></div>
-                            <span style="color:rgb(255, 196, 0);">std</span>::cout &lt;&lt; myVar; <span style="color:rgb(0, 255, 115)">// outputs 69420</span>
+                            <span class="base-class">std</span>::cout &lt;&lt; myVar; <span class="comment">// outputs 69420</span>
                             <div class="line-spacing"></div>
                     </section>
                 </code>
 
                 <h2>Assigning variables</h2>
-
                 <h3>You can assign variables together to form another value that might be useful in some programs.</h3>
                 <code>
                     <section class="code">
-                            <span style="color:rgb(57, 152, 255)">int</span> x = <span style="color:rgb(254, 88, 46)">69</span>;
+                            <span class="variable">int</span> x = <span class="code-value">69</span>;
                             <div class="line-spacing"></div>
-                            <span style="color:rgb(57, 152, 255)">int</span> y = <span style="color:rgb(254, 88, 46)">420</span>;
+                            <span class="variable">int</span> y = <span class="code-value">420</span>;
                             <div class="line-spacing"></div>
-                            <span style="color:rgb(57, 152, 255)">int</span> sum = x + y; <span style="color:rgb(0, 255, 115)">// sum = 489</span>
+                            <span class="variable">int</span> sum = x + y; <span class="comment">// sum = 489</span>
                             <div class="line-spacing"></div>
                     </section>
                 </code>
-            
-            <h2>How to use these variables</h2>
+            <br><br><br>
+            <h2>Variables Reference</h2>
 
-            <h2>1. integer(<span style="color:aqua">int</span>)</h2>
+            <h2>1. Integer(<span class="var-highlighting">int</span>)</h2>
             <ul>
-                <li><span style="color:aqua">int</span> keyword is used to represent integer numbers</li>
+                <li><span class="var-highlighting">int</span> keyword is used to represent integer numbers</li>
                 <li>Declaring example: </li>
                 <code>
                     <section class="code">
-                        <span style="color:rgb(57, 152, 255)">int</span> income = <span style="color:rgb(254, 88, 46)">783000</span>;
+                        <span class="variable">int</span> income = <span class="code-value">783000</span>;
                     </section>
                 </code>
             </ul>
 
-            <h2>2. <span style="color:aqua">float</span> and <span style="color:aqua">double</span></h2>
+            <h2>2. <span class="var-highlighting">float</span> and <span class="var-highlighting">double</span></h2>
             <ul> 
-                <li><span style="color:aqua">float</span> and <span style="color:aqua">double</span> are used to represent floating-point numbers, such as: 13.56, 96.69,... etc etc.</li>
-                <li>float has 4 bytes and double, as it name implies, it has 8 bytes of size</li>
-                <li>A float has 7 decimal digits of precision and occupies 32 bits. 
-                A double is a 64-bit IEEE 754 double-precision floating-point number. which means, 
-                double is more precise for storing large value.
+                <li><span class="var-highlighting">float</span> and <span class="var-highlighting">double</span> are used to represent floating-point numbers, such as: 13.56, 96.69,... etc etc.</li>
+                <li><span class="var-highlighting">float</span> has 4 bytes and <span class="var-highlighting">double</span>, as it name implies, it has 8 bytes of size</li>
+                <li><span class="var-highlighting">float</span> has 7 decimal digits of precision and occupies 32 bits. 
+                <span class="var-highlighting">double</span>is a 64-bit IEEE 754 double-precision floating-point number. which means, 
+                <span class="var-highlighting">double</span> is more precise and also for storing larger value.
                 </li>
                 <li>Declaring example: </li>
                   <code>
                     <section class="code">
-                        <span style="color:rgb(57, 152, 255)">double</span> points = <span style="color:rgb(254, 88, 46)">65.8</span>;
+                        <span class="variable">double</span> points = <span class="code-value">65.852</span>;
                         <div class="line-spacing"></div>
-                        <span style="color:rgb(57, 152, 255)">float</span> kilograms_of_sugar = <span style="color:rgb(254, 88, 46)">152.7</span>;
+                        <span class="variable">float</span> kilograms_of_sugar = <span class="code-value">152.7</span>;
                     </section>
                   </code>
             </ul>
 
+            <h2>3. Boolean(<span class="var-highlighting">bool</span>)</h2>
+            <ul>
+                <li><span class="var-highlighting">bool</span> is used for conditional statements in loops, expressions, algorithms,... etc etc.</li>
+                <li><span class="var-highlighting">bool</span> has only 1 byte of size. It only stores two values: <span class="code-value">true</span> and <span class="code-value">false</span>.</li>
+                <li>Declaring example: </li>
+                <code>
+                    <section class="code">
+                        <span class="variable">bool</span> earthIsFlat = false;
+                        <div class="line-spacing"></div>
+                        <span class="variable">bool</span> condition = true;
+                    </section>
+                </code>
+            </ul>
 
+            <h2>4. Character(<span class="var-highlighting">char</span>)</h2>
+            <ul>
+                <li><span class="var-highlighting">char</span> is used to store characters, but only 1 character at once.</li>
+                <li>It has 1 byte of size.</li>
+                <li><span class="var-highlighting">char</span> in C++ is enclosed by using 2 quotation mark outside the character value.</li>
+                <li>Declaring example: </li>
+                <code>
+                    <section class="code">
+                        <span class="variable">char</span> character = <span class="string">'e'</span>
+                    </section>
+                </code>
+            </ul>
+
+            <h2>5. <span class="var-highlighting">string</span></h2>
+            <ul>
+                <li><span class="var-highlighting">string</span> or to be more exact, <span class="base-class">std</span>::string, is used to store an array of characters. Like: "Hello World", "password",... etc etc</li>
+                <li>It has 24 bytes in size.</li>
+                <li>Declaring example:</li>
+                <code>
+                    <section class="code">
+                        <span class="base-class">std</span>::string = <span class="string">"Programming Is Fun!"</span>;
+                        <div class="line-spacing"></div>
+                        <span class="base-class">std</span>::string = <span class="string">"C++"</span>;
+                        <div class="line-spacing"></div>
+                        <span class="base-class">std</span>::string = <span class="string">"Computer Science"</span>;
+                    </section>
+                </code>
+            </ul>
+
+            <h2>6. <span class="var-highlighting">void</span></h2>
+            <ul>
+                <li><span class="var-highlighting">void</span> keyword is used to represent as <b>"no data"</b> or <b>"nothing"</b></li>
+                <li><span class="var-highlighting">void</span> keywords are widely used for functions, procedures and pointers</li>
+                <li>Declaring example:</li>
+                <code>
+                    <section class="code">
+                        <span class="variable">void</span> main();
+                        <div class="line-spacing"></div>
+                        <span class="variable">void</span> calculate();
+                    </section>
+                </code>
+            </ul>
         </div>
-
-
         
         <div class="ending"></div>
         <footer>
