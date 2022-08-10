@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/code-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--Customizations-->
+        <title>C++ I/O | Arduino Exchange Tutorials</title>
+        <link rel="shortcut icon" href="/favicon.jpg" />
+        <meta name="description" content="A friendly community for anyone to work on code, improving your skills, and collaborate with each other.">
+        <meta content = "#00FFFF" data-react-helmet="true" name="theme-color">
+
+        <!--JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+        <script src="/assets/js/script.js" type="text/javascript"></script>
+
+        <!-- SEO -->
+        <meta name="author" content="Arduino Exchange Tutorials">
+        <meta name="keywords" content="arduino, arduinoexchange, Arduino, ArduinoExchange, arduinoexchange.ml, tutorials, Arduino Exchange Tutorials, 
+        arduinoexchange.xyz, tutorials.arduinoexchange.xyz, C++, CPP, C++ Programming language">
+        <meta property="og:title" content="C++ | Arduino Exchange Tutorials">
+        <meta property="og:description" content="A playground for Arduino or any Developers for improving skills and more.">
+        <meta property="og:url" content="https://tutorials.arduinoexchange.xyz">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="/favicon.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="https://tutorials.arduinoexchange.xyz">
+
+        <!--Twitter-->
+        <meta name="twitter:site" content="@ArduinoExchange">
+        <meta name="twitter:creator" content="@ArduinoExchange">
+        <meta name="twitter:title" content="Arduino Exchange Tutorials">
+        <meta name="twitter:description" content="A playground for Arduino or any Developers for improving skills and more.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/favicon.jpg">
+        <style>
+            
+            
+            
+        </style>
+    </head>
+    <body>
+      <div class="navbar-container">
+        <div class="navbar-links">
+          <a href="https://arduinoexchange.xyz/"><i class="fa-solid fa-arrow-right-to-bracket"></i> Back to main site</a>
+          <a href="/">Home</a>
+          <a href="https://tutorials.arduinoexchange.xyz/programming-lang/">Programming languages</a>
+          <a href="https://tutorials.arduinoexchange.xyz/challenges/">Exercises/Challenges</a>
+          <a href="https://forum.arduinoexchange.xyz">Forum</a>      
+          <a href="https://tutorials.arduinoexchange.xyz/references/">References</a>
+        </div>
+        <div class="navbar-icons">
+          <a href="https://discord.gg/9y7Uc4kxgh"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://www.reddit.com/r/Arduino_exchange/"><i class="fa-brands fa-reddit"></i></a>
+          <a href="https://github.com/Arduino-Exchange"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/ArduinoExchange"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="begin">
+          <h1>C++ I/O Basic</h1>
+          <h2>This tutorial will guide you everything about C++ I/O Basic</h2>
+          <h2>
+              In computer programming, Input/Output is the communication interface between information processing system and an 
+              information source, which could be a human, or another information processing system
+          </h2>
+          <br><br>
+
+          <h2>C++ Output</h2>
+          <ul>
+                <li>In C++, we can use the object called <span class="base-class">std</span>::cout to print(output) text, values,... etc etc</li>
+                <li>For example</li>
+                <code>
+                    <section class="code">
+                       <span class="keywords">#include</span> <span class="var-highlighting">&lt;iostream&gt;</span>
+                       <div class="line-spacing"></div>
+                       <span class="variable">int</span> main() {
+                           <div class="main-code">
+                                <span class="variable">int</span> points = <span class="code-value">78</span>;
+                                <div class="line-spacing"></div>
+                                <span class="base-class">std</span>::cout &lt;&lt; <span class="string">"You have "</span> &lt;&lt; points &lt;&lt; <span class="string">"points"</span>;
+                                <div class="line-spacing"></div>
+                                <span class="keywords">return</span> <span class="code-value">0</span>;
+                            </div>
+                       }
+                    </section>
+                </code>
+
+                <li>Output: </li>
+                <code>
+                    <section class="code">
+                        You have 78 points
+                    </section>
+                </code>
+          </ul>
+          <h3>Explaining</h3>
+          <ol>
+            <li>
+              The <span class="keywords">#include</span><span class="var-highlighting"> &lt;iostream&gt; </span>
+              is to include the iostream header file so we can use the input/output feature.
+            </li>
+            <li>
+              In main function, we have declared a variable called point and then assign it to 78 as a value with an integer type.
+            </li>
+            <li>
+              Then we use std::cout (the cout object which is in the namespace called std) to print 
+              the string inside the two quotation marks, as well as the value of the variable.
+              Each value is followed together with the <b>&lt;&lt;</b> operator
+            </li>
+            <li>
+              <span class="keywords">return</span> 0; is used to end the <span class="var-highlighting">main</span>() function, 
+              this can be also called as the <b>exit status</b>
+            </li>
+            <h3><b>Note that the variable does not need to use quotation marks</b></h3>
+            
+          </ol>
+
+          <h2>C++ Input</h2>
+          <ul>
+              <li>
+                We can send (input)information to our program by using the function called <span class="base-class">std</span>::cin. 
+                For short, we can use it to read user input.
+              </li>
+              <li>For example: </li>
+              <code>
+                  <section class="code">
+                       <span class="keywords">#include</span> <span class="var-highlighting">&lt;iostream&gt;</span>
+                       <div class="line-spacing"></div>
+                       <span class="variable">int</span> main() {
+                           <div class="main-code">
+                                <span class="variable">int</span> salary; 
+                                <div class="line-spacing"></div>
+                                <span class="base-class">std</span>::cin >> salary;
+                                <div class="line-spacing"></div>
+                                <span class="base-class">std</span>::cout &lt;&lt; <span class="string">"Your salary is: "</span> &lt;&lt; salary;
+                                <div class="line-spacing"></div>
+                                <span class="keywords">return</span> <span class="code-value">0</span>;
+                           </div>
+                       }
+                  </section>
+              </code>
+              <li>Output: </li>
+                <code>
+                    <section class="code">
+                        15000
+                        <div class="line-spacing"></div>
+                        Your salary is: 15000
+                    </section>
+                </code>
+          </ul>
+
+          <h3>Explaining</h3>
+          <ol>
+            <li>
+              In the above program, we have created a variable called salary without declaring a value. 
+              Then we used the input statement called <span class="base-class">std</span>::cin to read user input
+            </li>
+            <li>
+              <span class="base-class">std</span>::cout to output the string in the 
+              quotation marks as well as the value followed by the <b>&lt;&lt;</b> operator
+            </li>
+          </ol>
+          <h3><b>Pro tip: You can try to add this before <span class="base-class">std</span>::cin statement for better reading experience!</b> </h3>
+          <code>
+              <section class="code">
+                <span class="base-class">std</span>::cout &lt;&lt; <span class="string">"Please enter your salary"</span>;
+              </section>
+          </code>
+          <h3>Output: </h3>
+          <code>
+            <section class="code">
+                Please enter your salary: 15000
+                <div class="line-spacing"></div>
+                Your salary is: 15000
+            </section>
+        </code>
+
+      </div>
+        <div class="ending"></div>
+         <div id="particles-bg"></div>
+         <script>
+           particlesJS.load("particles-bg", "/particles.json");
+           loadEnding();
+         </script>
+
+    </body>
+</html>
